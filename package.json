@@ -1,0 +1,40 @@
+{
+  "name": "fe-koi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "cm": "cz",
+    "dev": "nodemon app.js",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "^3.12.2",
+    "axios": "^1.2.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "commitizen": "^4.2.6",
+    "cz-conventional-changelog": "3.3.0",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.29.0",
+    "husky": "^8.0.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}

@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "cm": "cz",
+    "start": "node app.js",
     "dev": "nodemon app.js",
     "prepare": "husky install"
   },
